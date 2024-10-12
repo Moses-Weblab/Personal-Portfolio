@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/* Room Cards */
+.rooms-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.room-card {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+.services-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: .6rem;
+}
+.service-card{
+  width: 23%;
+  padding: .2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.service-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.service-card:hover {
+  transform: translateY(1%);
+  color: #535050;
+}
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+.program-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: .6rem;
+}
+.program-card{
+  width: 30%;
+  padding: .2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.program-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.program-card:hover {
+  transform: translateY(1%);
+  color: #353535;
+}
+#contact{
+  background: rgba(204, 199, 199, 0.048);
+  justify-content: center;
+  align-items: center;
+}
+#contact form{
+  justify-content: center;
+  align-items: center;
+}
+#contact input{
+  width: 50%;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  border: none;
+  color: #333;
+  
+}
+textarea{
+  width: 70%;
+  background-color: antiquewhite;
+  border: none;
+  color: #333;
+  border-radius: 20px;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .rooms-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .room-card {
+      width: 80%;
+  }
+  .services-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card{
+    width: 80%;
+  }
+  .program-card {
+      width: 80%;
+  }
+  .program-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .program-card{
+    width: 80%;
+  }
+}
